@@ -38,4 +38,6 @@ app.MapRazorPages();
 
 app.MapControllers();
 
+System.Diagnostics.Process.Start("explorer.exe", "http://localhost:5000");
+
 app.Run();
