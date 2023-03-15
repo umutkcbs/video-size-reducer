@@ -61,7 +61,7 @@ namespace VideoEditorBE.Controllers
                     string args = "/select, \"" + VideoProcessor.outputName + "\""; //AppDomain.CurrentDomain.BaseDirectory;
                     Process.Start("explorer.exe", args);
                     statusChecker = "not running";
-                    status = "Done!";
+                    status = VideoProcessor.outputName;
                 }
             }
             else

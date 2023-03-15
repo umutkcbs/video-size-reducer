@@ -23,7 +23,8 @@
     }
 
     body {
-        background-color: darkgray;
+        background-image: url('bg.jpg');
+        background-size: cover;
         min-height: 100vh;
         display: flex;
         align-items: center;
@@ -33,13 +34,19 @@
     }
 
     .mid {
-        background-color: white;
         display: flex;
         margin: auto;
         display: inline-flex;
         flex-direction: column;
         align-items: center;
         box-shadow: 10px 10px 5px 0px rgba(107, 148, 153, 1);
+            background: rgba( 0, 0, 0, 0.25 );
+            box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+            backdrop-filter: blur( 5.5px );
+            -webkit-backdrop-filter: blur( 5.5px );
+            border-radius: 10px;
+            border: 1px solid rgba( 255, 255, 255, 0.18 );
+        width: 300px;
     }
 
         .mid p {
@@ -48,7 +55,7 @@
         }
 
     #drop_zone {
-        border: 5px solid blue;
+        
     }
 
     .btn {
@@ -65,9 +72,9 @@
 </style>
     </head>
     <body>
-        <div class="mid">
-            <div id="drop_zone" ondrop="dropHandler(event);" ondragover="dragOverHandler(event);">
-                <p>_----------Drop files here----------_</p>
+        <div class="mid" id="drop_zone" ondrop="dropHandler(event);" ondragover="dragOverHandler(event);">
+            <div >
+                <p>Drop files here</p>
             </div>
             <div>
                 <!--<a href="main2.html"><button class="btn">Video'yu Yükle.</button></a>-->
